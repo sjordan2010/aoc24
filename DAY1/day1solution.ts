@@ -2,7 +2,8 @@ import { easyTest, input } from './input';
 
 const isLeft = (i: number) => i % 2 === 1;
 
-function findDiff(arr: number[]): number {
+/// ---------- PART ONE ---------- ///
+function findDiff(arr: number[]): number {    
     const leftArr: number[] = [];
     const rightArr: number[] = [];
 
@@ -19,6 +20,7 @@ function findDiff(arr: number[]): number {
 }
 console.log(findDiff(input));
 
+/// ---------- PART TWO ---------- ///
 function findSimilarityScore(arr: number[]): number {
     const leftArrayValues: Object = {};
     const rightArrayValues: Object = {};
